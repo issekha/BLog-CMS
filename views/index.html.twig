@@ -1,0 +1,47 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+
+ 
+
+    <div class="container ">
+        <div class=" synops center-block">
+            <h2>Synopsis</h2>
+            <p>Once upon the time, Suspendisse pulvinar, purus at euismod semper, nulla orci pulvinar massa, ac placerat nisi urna eu tellus. Fusce dapibus rutrum diam et dictum. Sed tellus ipsum, ullamcorper at consectetur vitae, gravida vel sem. Vestibulum pellentesque tortor et elit posuere vulputate. Sed et volutpat nunc. Praesent nec accumsan nisi, in hendrerit nibh. In ipsum mi, fermentum et eleifend eget, eleifend vitae libero.</p>
+        </div>
+    </div>
+
+<div class="container">
+        <div class="well chapter">
+{% for chapter in chapters %}
+<article>
+    <h2><a class="chapterTitle" href="{{ path('chapter', { 'id': chapter.id }) }}">{{ chapter.title }}</a></h2>
+    <p>{{ chapter.content }}</p>
+</article>
+{% endfor %}
+            
+    </div>
+</div>
+
+  <div class="container">
+        <div class="row">
+
+            
+                
+        
+
+            <div class="about well">
+               
+                <img src="/images/testcms1.jpg" class="img-thumbnail " alt="AuthorName">
+             <div class="col-sm-10">
+                <h3>A propos de l'auteur</h3>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+
+        </div>
+    </div>
+    </div>
+{% endblock %}

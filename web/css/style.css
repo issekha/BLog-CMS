@@ -1,0 +1,66 @@
+html,
+body{
+    height: 100%;
+}
+
+.view {
+    /* The image used */
+    background-image: url("/images/homePage/cover.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      z-index: 1;
+
+}
+
+.footer {
+    border-top: 1px solid #ccc;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.jumbotron {
+    color: #000;
+    background-color: rgba(0, 0, 255, 0);
+    
+    transform: translateY(50%);
+    /* tiré de la moitié de sa propre hauteur */
+}
+.navbar-default{
+  background:transparent;
+  background-image:none;
+  border-color:transparent;
+  box-shadow:none;
+}
+
+.synops{
+  padding-top: 10%;
+    padding-bottom: 25%;
+    width: 50%;
+}
+
+.chapter{
+    
+ 
+    background-color: beige;
+}
+
+.img-thumbnail{
+    float: left;
+    width: 10%;
+    height: 10%;
+}
+
+.about{
+    
+    padding-bottom: 20%;
+}
+.chapterTitle:hover, .chapterTitle:focus {
+    text-decoration: none;
+}
+
